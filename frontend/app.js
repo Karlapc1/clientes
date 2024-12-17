@@ -1,15 +1,14 @@
 const express = require('express');
 const path = require('path');
 
-
 const app = express();
 
 // Servir archivos estáticos (HTML, CSS, JS) desde la carpeta "public"
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Ruta principal para index.html
+// Ruta principal para clientes.html (Cambiar la vista inicial)
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'components', 'clientes.html'));
 });
 
 // Puerto en el que correrá el servidor
