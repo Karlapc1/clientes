@@ -14,7 +14,7 @@ const port = process.env.PORT || 3000;
 // Middleware
 // Configura CORS para permitir solicitudes desde el frontend
 app.use(cors({
-  origin: 'https://clientes-1ui9.onrender.com', // Cambia este valor al puerto de tu frontend
+  origin: 'https://clientes-1.onrender.com', // Cambia este valor al puerto de tu frontend
   credentials: true // Permite enviar cookies si es necesario
 }));
 
