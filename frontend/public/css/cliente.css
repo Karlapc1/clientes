@@ -1,132 +1,200 @@
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-    }
-    .sidebar {
-      width: 250px;
-      background-color: #2c3e50;
-      color: white;
-      height: 100vh;
-      padding: 20px;
-      box-sizing: border-box;
-    }
-    .sidebar .logo {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .sidebar ul {
-      list-style: none;
-      padding: 0;
-    }
-    .sidebar ul li {
-      margin: 15px 0;
-    }
-    .sidebar ul li a {
-      color: white;
-      text-decoration: none;
-      display: block;
-      padding: 10px;
-      border-radius: 5px;
-    }
-    .sidebar ul li a.active, .sidebar ul li a:hover {
-      background-color: #34495e;
-    }
-    .main-content {
-      flex: 1;
-      background-color: #ecf0f1;
-      padding: 20px;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #bdc3c7;
-      padding: 15px;
-      border-radius: 5px;
-      margin-bottom: 20px;
-    }
-    header input[type="text"] {
-      padding: 10px;
-      width: 300px;
-      border: none;
-      border-radius: 5px;
-    }
-    header .user-info {
-      display: flex;
-      align-items: center;
-    }
-    header .user-info img {
-      border-radius: 50%;
-      margin-left: 10px;
-    }
-    .content .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-    .content .header h1 {
-      margin: 0;
-    }
-    .btn {
-      padding: 10px 20px;
-      background-color: #2c3e50;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .btn:hover {
-      background-color: #34495e;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background-color: white;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    table th, table td {
-      padding: 15px;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
-    }
-    table th {
-      background-color: #34495e;
-      color: white;
-    }
-    table tbody tr:hover {
-      background-color: #f4f4f4;
-    }
-    .icon {
-      cursor: pointer;
-      padding: 5px 10px;
-      border: none;
-      border-radius: 3px;
-    }
-    .icon.edit {
-      background-color: #f1c40f;
-      color: white;
-    }
-    .icon.delete {
-      background-color: #e74c3c;
-      color: white;
-    }
-    #page-info {
-      margin: 10px 0;
-      font-size: 16px;
-    }
-    #prev-page, #next-page {
-      padding: 5px 15px;
-      margin: 5px;
-      border: none;
-      background-color: #2c3e50;
-      color: white;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-    #prev-page:disabled, #next-page:disabled {
-      background-color: #bdc3c7;
-      cursor: not-allowed;
-    }
+   body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: #D1E9D3; /* Verde pálido */
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #4CAF50; /* Verde medio */
+  color: white;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .logo {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #A8D5BA; /* Verde claro */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 12px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.sidebar ul li a.active, .sidebar ul li a:hover {
+  background-color: #2C6B3F; /* Verde oscuro */
+}
+
+.main-content {
+  flex: 1;
+  background-color: #ffffff; /* Fondo blanco para el contenido */
+  padding: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+/* Contenedor de búsqueda */
+header .search-container {
+  display: flex;
+  align-items: center;
+}
+
+header input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #d1d5db;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+header .search-container button {
+  padding: 10px 20px;
+  background-color: #388E3C; /* Verde intenso */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  transition: background-color 0.3s;
+}
+
+header .search-container button:hover {
+  background-color: #2C6B3F; /* Verde oscuro */
+}
+
+header .user-info {
+  display: flex;
+  align-items: center;
+}
+
+header .user-info img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-left: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.content .header h1 {
+  margin: 0;
+  font-size: 1.8em;
+  color: #2C6B3F; /* Verde oscuro */
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #A8D5BA; /* Verde claro */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #4CAF50; /* Verde medio */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th, table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+table th {
+  background-color: #2C6B3F; /* Verde oscuro */
+  color: white;
+}
+
+table tbody tr:hover {
+  background-color: #A8D5BA; /* Verde claro */
+}
+
+.icon {
+  cursor: pointer;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+.icon.edit {
+  background-color: #388E3C; /* Verde intenso */
+  color: white;
+}
+
+.icon.delete {
+  background-color: #4CAF50; /* Verde medio */
+  color: white;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+#page-info {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #2C6B3F; /* Verde oscuro */
+}
+
+#prev-page, #next-page {
+  padding: 5px 15px;
+  margin: 5px;
+  border: none;
+  background-color: #2C6B3F; /* Verde oscuro */
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+#prev-page:disabled, #next-page:disabled {
+  background-color: #BDC3C7; /* Gris suave */
+  cursor: not-allowed;
+}
